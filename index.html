@@ -1,99 +1,196 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SQURSOL</title>
-    <link href="style.css" rel="stylesheet/css">
+    <style>
+        body, html{
+            font-family: 'Times New Roman', serif;
+            background-color:bisque;
+            height: 100%;
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+            text-overflow: inherit;
+            text-shadow: 0.5em;
+            color: 	#1ca3ec;
+        }
+        h3{
+            color: black;
+            text-decoration:underline;
+        }
+        p{
+            text-align: left;
+            word-break:initial;
+            max-width: 80%;
+            min-width: 60%;
+            color: black;
+        }
+        h4{
+            text-align: center;
+            word-break:initial;
+            max-width: 100%;
+            min-width: 80%;
+            color: black;
+        }
+        ul{
+            background-color: wheat;
+            display: block;
+        }
+        * {box-sizing: border-box}
+        .tablink {
+            background-color: #555;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 20%;
+        }
+
+        .tablink:hover {
+            background-color: #777;
+        }
+        section{
+            width: 60%;
+            padding: 5%;
+            margin-right: auto;
+            float: left;
+            height: max-content;
+            background-color:blanchedalmond;
+            min-height: 80%;
+        }
+        .right{
+            width: 35%;
+            float: left;
+            height:max-content;
+            background-color: blanchedalmond;
+            min-height: 80%;
+        }
+        img{
+            border-radius: 50% 50% 50% 50%;
+            size-adjust:50px;
+            width: 300px;
+            height: 300px;
+            border: solid 2px #777;;
+            padding: 5%;
+            margin: 10px;display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        figcaption{
+            text-align: center;
+            color: gray;
+        }
+        .tabcontent {
+            color: white;
+            display: none;
+            padding: 100px 20px;
+            height: 100%;
+        }
+        .tabcontent:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media screen and (max-width: 600px) {
+            .column {
+            width: 100%;
+            }
+        }
+
+        #Bloktopia {background-color: wheat;}
+        #Wilder {background-color: wheat;}
+        #Enjin {background-color: wheat;}
+        #Sandbox {background-color: wheat;}
+        #Atlas{background-color: wheat;}
+    </style>
 </head>
 <body>
-        <p class="header">Best Metaverse Projects for 2022 </p>
-        <p class="details">
-            This is a Test website for the "MB Softech Consultants" internship program using HTML & CSS.
-        </p>
-        <ul class="navbar">
-          <li class="active"><a href="https://twitter.com/bloktopia">Bloktopia</a></li>
-          <li><a href="https://twitter.com/bloktopia">Wilder World</a></li>
-          <li><a href="">Enjin</a></li>
-          <li><a href="">The Sandbox</a></li>
-          <li><a href="">Star Atlas</a></li>
-        </ul>
-    <div>
-        &nbsp;
-    </div>
-    <section id="first-project">
-        <div class="text1">
-            <div class="col sqs-col-8 span-8">
-                <h1 style="white-space: pre-wrap; text-align: left;">Bloktopia</h1>
-                <p>
-                    Bloktopia is a Skyscraper of 21 levels to pay recognition to 21 million Bitcoin. Token holders will be known as Bloktopians. It will act as a central hub and welcome all levels of the crypto experience. For the first time ever, users will have access to crypto information and immersive content in one place. Bloktopians can earn revenue through real estate ownership, advertising revenue, playing games, building networks, and much more.
-                </p>
-            </div>
-            <div class="col sqs-col-4 span-4">
-                <img src="https://pbs.twimg.com/profile_images/1443182135410634754/l1wH-p3b_400x400.jpg" alt="Bloktopia-Logo" 
-            style="border-radius:50% 50% 50% 50%;width:100px;height:100px;">
-            </div>
-        </div>
+        <h1>Best Metaverse Projects for 2022 </h1>
+        <h4>'This is a Test website for the "MB Softech Consultants" internship program using HTML & CSS.'</h4>
+        <button class="tablink" onclick="openPage('Bloktopia', this, 'black')" id="defaultOpen">Bloktopia</button>
+        <button class="tablink" onclick="openPage('Wilder', this, 'black')">Wilder World</button>
+        <button class="tablink" onclick="openPage('Enjin', this, 'black')">Enjin</button>
+        <button class="tablink" onclick="openPage('Sandbox', this, 'black')">The Sandbox</button>
+        <button class="tablink" onclick="openPage('Atlas', this, 'black')">Star Atlas</button>
+
+<div id="Bloktopia" class="tabcontent">
+    <section>
+        <a href="https://twitter.com/bloktopia"><h3>Bloktopia</h3></a>
+        <p>Bloktopia is a Skyscraper of 21 levels to pay recognition to 21 million Bitcoin. Token holders will be known as Bloktopians. It will act as a central hub and welcome all levels of the crypto experience. For the first time ever, users will have access to crypto information and immersive content in one place. Bloktopians can earn revenue through real estate ownership, advertising revenue, playing games, building networks, and much more.</p>
     </section>
-    <section id="first-project">
-        <div class="text1">
-            <div class="col sqs-col-8 span-8">
-                <h1 style="white-space: pre-wrap; text-align: left;">Wilder World</h1>
-                <p>
-                    Wilder World enables multi-leveled, photorealistic, and mixed reality worlds where Wilders roam freely, acquire virtual land and express themselves through unique avatars, decorative assets, and fashionable accessories. Wilder World is fully owned and governed by its community — creators, players, and fans alike are enabled to participate via the Wilder DAO on the Ethereum blockchain.
-                </p>
-            </div>
-            <div class="col sqs-col-4 span-4">
-                <img src="https://miro.medium.com/max/1400/1*fO2rh9X3DPcwfWMZkIP4Vg.png" alt="Bloktopia-Logo" 
-            style="border-radius:50% 50% 50% 50%;width:100px;height:100px;">
-            </div>
-        </div>
+    <aside class="right">
+        <img src="https://pbs.twimg.com/profile_images/1443182135410634754/l1wH-p3b_400x400.jpg" alt="Bloktopia-Logo">
+        <figcaption>"Bloktopia Companies Logo Design"</figcaption>
+    </aside>
+</div>
+
+<div id="Wilder" class="tabcontent">
+  <section>
+    <a href="https://twitter.com/bloktopia"><h3>Wilder World</h3></a>
+  <p>Wilder World enables multi-leveled, photorealistic, and mixed reality worlds where Wilders roam freely, acquire virtual land and express themselves through unique avatars, decorative assets, and fashionable accessories. Wilder World is fully owned and governed by its community — creators, players, and fans alike are enabled to participate via the Wilder DAO on the Ethereum blockchain.</p> 
+  </section>
+  <aside class="right">
+    <img src="https://miro.medium.com/max/1400/1*fO2rh9X3DPcwfWMZkIP4Vg.png" alt="Wilder Wortld-Logo">
+    <figcaption>"Wilder World Companies Logo Design"</figcaption>
+  </aside>
+</div>
+
+<div id="Enjin" class="tabcontent">
+  <section>
+    <a href="https://twitter.com/enjin"><h3>Enjin</h3></a>
+  <p>Enjin is the “largest gaming community platform online” with over 250,000 gaming communities and 18.7 million registered gamers. The project includes the Enjin Coin as well as a suite of software development kits (SDKs) that developers can integrate into their games and communities. Bringing blockchain to gaming helps to reduce the high fees and fraud that are prevalent in the transfer of virtual goods.</p>
+  </section>
+  <aside class="right">
+    <img src="https://pbs.twimg.com/profile_banners/20356963/1641168873/1080x360" alt="Enjin-Logo">
+    <figcaption>"Enjin Companies Logo Design"</figcaption>
+  </aside>
+</div>
+
+<div id="Sandbox" class="tabcontent">
+  <section>
+    <a href="https://images.app.goo.gl/yfEhhJEZsJuHz7jq6"><h3>The Sandbox</h3></a>
+  <p>Sandbox is a decentralized community-owned virtual world. Creators can host custom games and events in the virtual world. The key difference with Sandbox is that players have true ownership of the virtual world assets in the form of NFTs. By doing so, players and creators will be able to participate in the economy by asset trading and earning through tokens, making Sandbox also considered a play-to-earn game.</p>
+  </section>
+  <aside class="right">
+    <img src="https://www.altcoinbuzz.io/wp-content/uploads/2021/04/sandbox-logo-02.jpg" alt="The Sandbox-Logo">
+    <figcaption>"The Sandbox Companies Logo Design"</figcaption>
+  </aside>
+</div>
+
+<div id="Atlas" class="tabcontent">
+    <section>
+        <a href="https://twitter.com/staratlas"><h3>Star Atlas</h3></a>
+    <p>Star Atlas is a next-gen gaming metaverse emerging from the confluence of state-of-the-art blockchain, real-time graphics, multiplayer video games, and decentralized financial technologies.</p>
     </section>
-    <section id="first-project">
-        <div class="text1">
-            <div class="col sqs-col-8 span-8">
-                <h1 style="white-space: pre-wrap; text-align: left;">Enjin</h1>
-                <p>
-                    Enjin is the “largest gaming community platform online” with over 250,000 gaming communities and 18.7 million registered gamers. The project includes the Enjin Coin as well as a suite of software development kits (SDKs) that developers can integrate into their games and communities. Bringing blockchain to gaming helps to reduce the high fees and fraud that are prevalent in the transfer of virtual goods.
-                </p>
-            </div>
-            <div class="col sqs-col-4 span-4">
-                <img src="https://pbs.twimg.com/profile_banners/20356963/1641168873/1080x360" alt="Bloktopia-Logo" 
-            style="border-radius:50% 50% 50% 50%;width:100px;height:100px;">
-            </div>
-        </div>
-    </section>
-    <section id="first-project">
-        <div class="text1">
-            <div class="col sqs-col-8 span-8">
-                <h1 style="white-space: pre-wrap; text-align: left;">The Sandbox</h1>
-                <p>
-                    Sandbox is a decentralized community-owned virtual world. Creators can host custom games and events in the virtual world. The key difference with Sandbox is that players have true ownership of the virtual world assets in the form of NFTs. By doing so, players and creators will be able to participate in the economy by asset trading and earning through tokens, making Sandbox also considered a play-to-earn game.
-                </p>
-            </div>
-            <div class="col sqs-col-4 span-4">
-                <img src="https://www.altcoinbuzz.io/wp-content/uploads/2021/04/sandbox-logo-02.jpg" alt="Bloktopia-Logo" 
-            style="border-radius:50% 50% 50% 50%;width:100px;height:100px;">
-            </div>
-        </div>
-    </section>
-    <section id="first-project">
-        <div class="text1">
-            <div class="col sqs-col-8 span-8">
-                <h1 style="white-space: pre-wrap; text-align: left;">Star Atlas</h1>
-                <p>
-                    Star Atlas is a next-gen gaming metaverse emerging from the confluence of state-of-the-art blockchain, real-time graphics, multiplayer video games, and decentralized financial technologies.
-                </p>
-            </div>
-            <div class="col sqs-col-4 span-4">
-                <img src="https://pbs.twimg.com/profile_images/1340401341118599168/VAPgKv9O_400x400.jpg" alt="Bloktopia-Logo" 
-            style="border-radius:50% 50% 50% 50%;width:100px;height:100px;">
-            </div>
-        </div>
-    </section>
+    <aside class="right">
+        <img src="https://pbs.twimg.com/profile_images/1340401341118599168/VAPgKv9O_400x400.jpg" alt="Star Atlas-Logo">
+        <figcaption>"Star Atlas Companies Logo Design"</figcaption>
+    </aside>
+  </div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
 </body>
-<footer>
-    <span class="fa fa-twitter"  ></span>
-        <span class="fa fa-instagram" ></span>
-        <span class="fa fa-twitter" ></span>
-</footer>
 </html>
